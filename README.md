@@ -5,7 +5,7 @@ Universidad Latinoamericana de Ciencia y Tecnología
 ULACIT
 2022
 
-# comandos_linux
+# comandos linux
 
 | Comando | Descripción | Ejemplo de uso |
 | ------------- | ------------- | ------------- |
@@ -38,4 +38,26 @@ ULACIT
 | echo        | se imprimen en la salida estándar. echo se usa comúnmente en scripts de shell para mostrar un mensaje o generar los resultados de otros comandos. | echo "Me llamo Yulianna"   |
 | reboot        | comando para reiniciar la maquina o el servidor | sudo reboot   |
 
-# comandos_docker
+# comandos docker
+| Comando | Descripción | Ejemplo de uso |
+| ------------- | ------------- | ------------- |
+| systemctl start       | iniciar el daemon | sudo systemctl start docker   |
+| systemctl enable       | habilitar el daemon | sudo systemctl enable docker   |
+| docker search       | buscar imagenes | docker search ubuntu   |
+| docker run -i -t     | prueba del contenedor | docker run -i -t ubuntu /bin/echo  |
+| docker images      | ver imagenes instaladas | sudo docker images   |
+| docker run -it       | Iniciar una instancia | sudo docker run -it Ubuntu   |
+| docker ps -a       | ver el estado de las imagenes | sudo docker ps -a    |
+| docker stop     | detener un contenedor | docker stop container-id  |
+| docker start    | iniciar un contenedor | docker start container-id  |
+| docker login -u      | Iniciar sesión en la terminal con el usuario de docker hub | sudo docker login -u usuario_dockerhub   |
+| docker push      | Hacer un push a la cuenta de DockerHub | sudo docker push docker-registry-username/docker-image-name   |
+| docker rmi     | eliminar imagenes de docker | docker rmi Image Image |
+| docker rm     | eliminar contenedores  | docker rm ID |
+| docker run --rm    | eliminar contenedores despues de cerrado | docker run --rm image_name  |
+| docker rm $(sudo docker ps -a -f status=exited -q)   | eliminar todos los contenedores con estado “Exited (0)”  | sudo docker rm $(sudo docker ps -a -f status=exited -q)   |
+| docker pull      | obtener una imagen docker  | docker pull portainer/portainer-ce:latest |
+| docker rm     | crear un volumen donde se almacenarán los datos de configuración  | docker rm ID |
+| docker volume create     | eliminar todos los contenedores con estado “Exited (0)” | docker volume create portainer_data |
+| docker run -d -p 8000:8000 -p 9443:9443      | ejecutar la aplicación con el puerto 9443 y el puerto 8000 expuesto  | docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest |
+| add-apt-repository "deb [arch=amd64]      | agregar el repositorio oficial de Docker  | sudo add-apt-repository "deb [arch=amd64]  |
