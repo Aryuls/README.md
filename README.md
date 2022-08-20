@@ -36,3 +36,5 @@ ULACIT
 | uname       |  imprimirá información detallada sobre el sistema Linux, como el nombre de la máquina, el sistema operativo, el núcleo, etc.  | $ uname _ a              |
 | man    |  muestra el manual de un comando.   |  $ man free                        |
 | echo        | se imprimen en la salida estándar. echo se usa comúnmente en scripts de shell para mostrar un mensaje o generar los resultados de otros comandos. | echo "Me llamo Yulianna"   |
+| reboot        | comando para reiniciar la maquina o el servidor | sudo reboot   |
+
