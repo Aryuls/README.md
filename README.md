@@ -38,3 +38,4 @@ ULACIT
 | echo        | se imprimen en la salida estándar. echo se usa comúnmente en scripts de shell para mostrar un mensaje o generar los resultados de otros comandos. | echo "Me llamo Yulianna"   |
 | reboot        | comando para reiniciar la maquina o el servidor | sudo reboot   |
 
+# comandos_docker
